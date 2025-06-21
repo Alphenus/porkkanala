@@ -1,9 +1,9 @@
 ---
-title: "Zen demo site"
-baseURL: "https://zen-demo.xdeb.org/"
+title: "Porkkanala"
+baseURL: "https://alphenus.github.io/porkkanala/"
 theme: "github.com/frjo/hugo-theme-zen/v5"
-languageCode: "en-GB"
-defaultContentLanguage: "en"
+languageCode: "fi-FI"
+defaultContentLanguage: "fi"
 pluralizelisttitles: false
 removePathAccents: true
 rssLimit: 20
@@ -32,11 +32,11 @@ outputs:
 
 params:
   author:
-    name: "Fredrik Jonsson"
-    url: "https://xdeb.org"
-  contact: "frjo@xdeb.org"
+    name: "Alpi Rimppi"
+    url: ""
+  contact: ""
   copyright: '<!--Creative Commons License-->This site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> licence.<!--/Creative Commons License-->'
-  description: "The zen theme for Hugo demo site."
+  description: "Porkkanala"
   dateformat: "2 January, 2006"
   favicon: "apple-touch-icon.png"
   feedlinks: true
@@ -46,7 +46,7 @@ params:
   logoWidth: 64
   logoHeight: 64
   mainSections:
-    - blog
+    - reseptit
   mobileMenu: true
   poweredby: true
   realfavicongenerator: true
@@ -54,22 +54,22 @@ params:
   submitted: true
 
 languages:
-  en:
+  fi:
     weight: 1
-    languageName: "English"
-    languageCode: "en-GB"
-    contentDir: content/en
+    languageName: "Finnish"
+    languageCode: "fi-FI"
+    contentDir: content/fi
     menu:
       main:
-        - Name: "Home"
+        - Name: "Koti"
           weight: -10
           pageRef: "/"
-        - Name: "Blog"
+        - Name: "Reseptit"
           weight: 2
-          pageRef: "/blog/"
-        - Name: "Podcast"
+          pageRef: "/reseptit/"
+        - Name: "Filosofia"
           weight: 4
-          pageRef: "/podcast/"
+          pageRef: "/filosofia"
         - Name: "Products"
           weight: 6
           pageRef: "/products/"
@@ -83,14 +83,4 @@ languages:
           weight: 12
           pageRef: "/contact/"
 
-  sv:
-    weight: 2
-    languageName: "Svenska"
-    languageCode: "sv-SE"
-    contentDir: content/sv
-    menu:
-      main:
-        - Name: "Hem"
-          weight: -10
-          pageRef: "/"
 
